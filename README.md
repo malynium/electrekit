@@ -4,7 +4,7 @@
 
 This is a barebones install for an Electron app running SvelteKit with a static adapter.
 
-You can either run `npx degit electrekit` to get started quickly,
+You can either run `npx degit malynium/electrekit` - inside of a directory - to get started quickly,
 then skip down to [Start the app](#start-the-app); or for more up-front customization - like Typesript, Elint, and Prettier - use the below steps to install manually.
 
 ## Install SvelteKit
