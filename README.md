@@ -4,8 +4,15 @@
 
 This is a barebones install for an Electron app running SvelteKit with a static adapter.
 
-You can either run `npx degit malynium/electrekit` - inside of a directory - to get started quickly,
-then skip down to [Start the app](#start-the-app); or for more up-front customization - like Typesript, Elint, and Prettier - use the below steps to install manually.
+Inspired by the [FractalHQ](https://github.com/FractalHQ/sveltekit-electron) implementation. Which adds Typescript, Eslint Prettier, SASS, and more electron packages - but I didn't want all that when getting started.
+
+## Quickstart
+
+`npx degit malynium/electrekit`
+`npm install`
+[Usage](#usage)
+
+Or for more up-front customization - like adding Typesript, Eslint, and Prettier - use the below steps to install manually.
 
 ## Install SvelteKit
 
@@ -110,9 +117,9 @@ app.on('window-all-closed', function () {
 },
 ```
 
-## Start the app
+## Usage
 
-### Developement
+### Development
 
 SvelteKit runs a webserver, and Electron loads that page in it's window
 
@@ -120,7 +127,7 @@ SvelteKit runs a webserver, and Electron loads that page in it's window
 
 ### Build Svelte
 
-SvelteKit creates your webapp and saves the files in the `static` directory
+SvelteKit creates your webapp and saves the files in the `static` directory, to prep for an Electron build.
 
 `npm run build:svelte`
 
