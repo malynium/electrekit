@@ -31,7 +31,7 @@ npm install
 
 `npm i -D @sveltejs/adapter-static@next`
 
-Import the adapter, disable SSR, and change the output of build files from 'build' to 'static.
+Import the adapter, disable SSR, and change the output of build files from the 'build' to 'static' directory.
 
 ```
 // svelte.config.js
@@ -56,8 +56,6 @@ const config = {
 ## Add main to package.json
 
 ```
-// package.json
-
 "main": "src/electron.cjs",
 ```
 
