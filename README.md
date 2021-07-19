@@ -108,17 +108,17 @@ app.on('window-all-closed', function () {
 
 ...
 "scripts": {
-		"dev": "NODE_ENV=dev npm run dev:all",
-		"dev:all": "concurrently -n=svelte,electron -c='#ff3e00',blue \"npm run dev:svelte\" \"npm run dev:electron\"",
-		"dev:svelte": "svelte-kit dev",
-		"dev:electron": "electron src/electron.cjs",
-		"build": "cross-env NODE_ENV=production npm run build:svelte && npm run make",
-		"build:svelte": "svelte-kit build",
-    "start": "electron-forge start",
-    "start:svelte": "svelte-kit start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
-	},
+  "dev": "NODE_ENV=dev npm run dev:all",
+  "dev:all": "concurrently -n=svelte,electron -c='#ff3e00',blue \"npm run dev:svelte\" \"npm run dev:electron\"",
+  "dev:svelte": "svelte-kit dev",
+  "dev:electron": "electron src/electron.cjs",
+  "build": "cross-env NODE_ENV=production npm run build:svelte && npm run make",
+  "build:svelte": "svelte-kit build",
+  "start": "electron-forge start",
+  "start:svelte": "svelte-kit start",
+  "package": "electron-forge package",
+  "make": "electron-forge make"
+},
 ...
 ```
 
