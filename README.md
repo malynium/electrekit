@@ -4,7 +4,7 @@
 
 This is a barebones install for an Electron app running SvelteKit with a static adapter.
 
-Inspired by the [FractalHQ](https://github.com/FractalHQ/sveltekit-electron) implementation. Which adds support for Typescript, Eslint Prettier, and SASS - but I didn't want all that when getting started.
+Inspired by the [FractalHQ](https://github.com/FractalHQ/sveltekit-electron) implementation. Which adds support for Typescript, Eslint, Prettier, and SASS - but I didn't want all that when getting started.
 
 ## Quickstart
 
