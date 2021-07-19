@@ -1,6 +1,6 @@
 # Electrekit -- Electron + Sveltekit
 
-(__Electr__on + Svelt__ekit__)
+(**Electr**on + Svelt**ekit**)
 
 This is a barebones install for an Electron app running SvelteKit with a static adapter.
 
