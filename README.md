@@ -9,7 +9,9 @@ Inspired by the [FractalHQ](https://github.com/FractalHQ/sveltekit-electron) imp
 ## Quickstart
 
 `npx degit malynium/electrekit`
+
 `npm install`
+
 [Usage](#usage)
 
 Or for more up-front customization - like adding Typesript, Eslint, and Prettier - use the below steps to install manually.
