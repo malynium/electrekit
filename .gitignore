@@ -2,4 +2,5 @@
 node_modules
 /.svelte-kit
 /package
+package-lock.json
 out/
