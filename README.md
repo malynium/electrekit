@@ -22,26 +22,22 @@ npm install
 
 `npm i -D @sveltejs/adapter-static@next`
 
-Disable SSR and change the output of build files from 'build' to 'static.
+Import the adapter, disable SSR, and change the output of build files from 'build' to 'static.
 
 ```
 // svelte.config.js
 
 import adapter from '@sveltejs/adapter-static';
 
-...
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		...
-		adapter: adapter({
+  kit: {
+    adapter: adapter({
       pages: 'static',
     }),
     ssr: false,
-    ...
-	}
+  }
 };
-...
 ```
 
 ## Install Electron and other packages
@@ -53,20 +49,16 @@ const config = {
 ```
 // package.json
 
-...
 "main": "src/electron.cjs",
-...
 ```
 
 ## Create and setup electron.cjs
 
 `touch src/electron.cjs` || or whatever method you'd use to create a new file.
 
-Insert the below code into electron.cjs
+Insert the below code into src/electron.cjs
 
 ```
-// src/electron.cjs
-
 const { app, BrowserWindow } = require('electron')
 const serve = require('electron-serve')
 
@@ -104,9 +96,6 @@ app.on('window-all-closed', function () {
 ## Replace all package.json scripts with these
 
 ```
-// package.json
-
-...
 "scripts": {
   "dev": "NODE_ENV=dev npm run dev:all",
   "dev:all": "concurrently -n=svelte,electron -c='#ff3e00',blue \"npm run dev:svelte\" \"npm run dev:electron\"",
@@ -119,7 +108,6 @@ app.on('window-all-closed', function () {
   "package": "electron-forge package",
   "make": "electron-forge make"
 },
-...
 ```
 
 ## Start the app
