@@ -141,4 +141,6 @@ Electron starts your app locally
 
 ### Build Electron
 
+For creating platform applications (macOS, Windows)
+
 `npm run make`
